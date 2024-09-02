@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #7ca3af;
+}
+section .card{
+    width: 700px;
+    height: 250px;
+    color: #212121;
+    background-color: lightcoral;
+    margin: 20px;
+    padding: 20px;
+    line-height: 40px;
+}
+section .card:nth-child(1){
+    overflow: auto;
+    border: 3px solid brown;
+}
+
+section .card:nth-child(1)::-webkit-scrollbar{
+    background-color: transparent;
+}
+section .card:nth-child(1)::-webkit-scrollbar-track{
+    
+    border-radius: 50px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+section .card:nth-child(1)::-webkit-scrollbar-thumb{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+}
+.card:nth-child(2){
+    background-color: #fff;
+    color: #212121;
+    overflow-y: scroll;
+}
+.card:nth-child(2)::-webkit-scrollbar{
+    background: transparent;
+}
+.card:nth-child(2)::-webkit-scrollbar-track{
+    box-shadow: none;
+}
+.card:nth-child(2)::-webkit-scrollbar-thumb{
+    border-radius: 0;
+    background-color: #4141414d;
+    background-image: none;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 7px rgba(0,0,0,0.4);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    border-radius: 100px;
+}
