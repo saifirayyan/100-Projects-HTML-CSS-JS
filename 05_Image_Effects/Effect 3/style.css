@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+}
+.container .card {
+  height: 35rem;
+  width: 30rem;
+  overflow: hidden;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: all 1s;
+}
+
+.card .img-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+  opacity: 1;
+}
+.card .img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background-color: crimson;
+  height: 10px;
+  width: 80%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.5s;
+}
+.content h2 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 25px;
+  display: none;
+}
+.content p {
+  color: #fff;
+  font-size: 18px;
+  width: 80%;
+  text-align: center;
+  transition: all 1s;
+  opacity: 0;
+  display: none;
+}
+.content a {
+  background-color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  margin: 25px;
+  transition: all 1s;
+  opacity: 0;
+  display: none;
+}
+.card:hover .content {
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+.card:hover .img-container {
+  opacity: 0;
+}
+.card:hover .content a,
+.card:hover .content h2,
+.card:hover .content p {
+  display: inline-block;
+  opacity: 1;
+}
