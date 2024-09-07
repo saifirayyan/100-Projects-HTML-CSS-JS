@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.container{
+    width: 25rem;
+    padding: 20px;
+    background-color: #010101;
+    color: #fff;
+}
+.scrollbar{
+    width: 22rem;
+    height: 30rem;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.object{
+    padding: 20px;
+}
